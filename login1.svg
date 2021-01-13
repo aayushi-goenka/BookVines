@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1180" viewBox="0 0 1920 1180">
+  <defs>
+    <clipPath id="clip-LogIn_4">
+      <rect width="1920" height="1180"/>
+    </clipPath>
+  </defs>
+  <g id="LogIn_4" data-name="LogIn – 4" clip-path="url(#clip-LogIn_4)">
+    <rect width="1920" height="1180" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="93" transform="translate(-1 -1)" fill="#3f210e"/>
+    <g id="Path_156" data-name="Path 156" transform="translate(0 1042)" fill="#3f210e">
+      <path d="M 1919.5 141.5 L 0.5 141.5 L 0.5 0.5 L 1919.5 0.5 L 1919.5 141.5 Z" stroke="none"/>
+      <path d="M 1 1 L 1 141 L 1919 141 L 1919 1 L 1 1 M 0 0 L 1920 0 L 1920 142 L 0 142 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <text id="_C_2020._All_Rights_Reserved_BookVines" data-name="(C) 2020. All Rights Reserved BookVines" transform="translate(62 1126)" fill="#fff" font-size="26" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">(C) 2020. All Rights Reserved BookVines</tspan></text>
+    <text id="LogIn" transform="translate(72 56)" fill="#fff" font-size="26" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">LogIn</tspan></text>
+    <path id="Path_164" data-name="Path 164" d="M0,0,28.285,6.531s8.495,3.9,12.451,3.9C45.123,10.43,53,6.32,53,6.32L82,0V32H0Z" transform="translate(934 987)" fill="#fff"/>
+    <g id="Icons_menu" data-name="Icons/ menu" transform="translate(1853 31)">
+      <g id="Icons_menu-2" data-name="Icons/ menu" transform="translate(0 3.333)">
+        <path id="Path" d="M0,.5H24" transform="translate(8 13.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+        <path id="Path-2" data-name="Path" d="M0,.625H40" transform="translate(0 26.042)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+        <path id="Path-3" data-name="Path" d="M0,.625H40" transform="translate(0 -0.625)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+      </g>
+    </g>
+    <path id="Path_166" data-name="Path 166" d="M-2140,1008s-75.853,76.032-75.853,154.073,75.853,75.821,75.853,158.09-75.853,110.5-75.853,199.2,75.853,76.248,75.853,155.61-75.853,90.573-75.853,161.836S-2140,1960.025-2140,1960.025h-976.89V1008Z" transform="translate(3115 -916)" fill="#3f210e"/>
+    <rect id="Rectangle_487" data-name="Rectangle 487" width="397" height="554" rx="23" transform="translate(227 291)" fill="#f7f4f0"/>
+    <text id="BookVines" transform="translate(283 187)" fill="#fff" font-size="53" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">BookVines</tspan></text>
+  </g>
+</svg>
