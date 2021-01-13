@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+<title>login</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <br>
+    <img src="owl1.png" alt="owl logo">
+    <div class="login-page">
+    <div class="lform">
+      <br>
+        <form class="register-form">
+        <h1>Sign Up</h1>
+        Username
+        <br>
+        <br>
+        <input type="text" placeholder="Username"/>
+        <br>
+        <br>
+        Password
+        <br>
+        <br>
+        <input type="text" placeholder="Password"/>
+        <br>
+        <br>
+        Email Address
+        <br>
+        <br>
+        <input type="text" placeholder="Email-Id"/>
+        <br>
+        <br>
+        <button>Create Account</button>
+        <p class="message">Already have an account? <a href="#">Login</a></p>
+        </form>
+
+        <form class="login-form">
+          <h1>Login</h1>
+          Email Address
+          <br>
+          <br>
+          <input type="text" placeholder="Email-Id"/>
+          <br>
+          <br>
+          Password
+          <br>
+          <br>
+          <input type="text" placeholder="Password"/>
+          <br>
+          <p class="message">Forgot Password? <a href="#">Click here</a></p>
+          <br>
+          <button>Login</button>
+          <p class="message" style="margin-left: 3.5%;">New User? <a href="#">Sign Up</a></p>
+        </form>
+        </div>
+        </div>
+
+        <script src='https://code.jquery.com/jquery-3.5.1.min.js'>
+        </script>
+
+        <script>
+          $('.message a').click(function() {
+          $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+          });
+        </script>
+        </body>
+</html>
