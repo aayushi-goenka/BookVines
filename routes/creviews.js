@@ -8,7 +8,6 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const app = express();
 
 
-
 router.get("/", function (req, res) {
     if (req.isAuthenticated()) 
       res.render("creviews");
