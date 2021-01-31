@@ -1,0 +1,134 @@
+.first-nav{
+    background-color:#401303d9;
+    display:flex;
+    
+}
+.first-nav-div1{
+   margin-left: 5%;
+   padding-top: 1rem;
+   margin-right:3%;
+}
+.first-nav-div1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+.first-nav-div2{
+    margin:0 auto;
+    
+}
+.first-nav-div2 p{
+    color: white;
+    padding-top: 1rem;
+}
+.first-nav-div3{
+    margin-right: 2rem;
+    margin-left:3%;
+}
+.first-nav-div3 p{
+    color: white;
+    padding-top: 1rem;
+}
+#navbar{
+    padding:20px;
+    
+}
+.navbar-brand{
+    font-size: 210%;
+    margin-left: 4rem;
+}
+#book{
+    color:#c6bf97;
+}
+#vines{
+    color:#6e0606;
+}
+
+#nav-link1{
+    padding-right: 0px;
+   
+}
+#nav-link2{
+    padding-right: 0px;
+   
+}
+#nav-link1{
+    padding-right: 0px;
+    
+}
+
+
+.add{
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    
+}
+.add-div img{
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.add-div img:hover{
+   transform: scale(1.3);
+}
+
+.frequent-heading{
+    margin-top: 4rem;
+    
+}
+.frequent-heading h3{
+    /*font-family: 'Kaushan Script', cursive;*/
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 220%; 
+}
+
+.container{
+    margin-top: 5rem;
+}
+.frequent-book{
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    border: black solid 1px;
+    border-radius: 4%;
+    border-color: #bbbbbb;
+}
+.frequent-book-div1 img{
+    display: block;
+    margin:auto;
+}
+.frequent-book-div2 p{
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.frequent-book{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.frequent-book:hover {
+    transform: scale(1.2); 
+}
+
+.copyright{
+    
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+    background-color: #401303d9;
+    padding: 0.8rem;
+}
+
+@media screen and (max-width: 582px){
+
+    .frequent-book{
+        margin-right:4rem;
+  }
+  .add{
+      margin-right:4rem ;
+  }
+
+  }

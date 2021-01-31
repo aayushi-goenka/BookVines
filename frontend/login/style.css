@@ -1,64 +1,84 @@
-body {
-    background-image: url(login1.svg);
-    height: 120vh;
-    background-size: cover;
-    background-position: center;
-    outline: none;
-    position: relative;
-
+.first-nav{
+    background-color:#401303d9;
+    display:flex;
 }
-.lform {
-    position: relative;
-    outline: none;
-    width: 500px;
-    margin-left: 13%;
-    margin-top: 14%;
-    float: left;
-    position: relative;
-
-
+.first-nav-div1{
+   margin-left: 5%;
+   padding-top: 1rem;
+   margin-right:3%;
 }
-h1 {
-    padding-left: 13%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.lform input {
-    border-radius: 25px;
-    width: 220px;
-    box-sizing: border-box;
-    font-size: 22px;
-    border-color: white;
-    outline: none;
-
-}
-
-.lform button {
-    border-radius: 25px;
-    font-size: 22px;
-    border-color: white;
-    background-color: #502916;
-    width: 220px;
+.first-nav-div1 a{
+    text-decoration: none;
     color: white;
-    outline: none;
-
     
 }
-.lform button:hover,.form button:active {
-    background-color: #b45d31;
-
+.first-nav-div2{
+    margin:0 auto;
+    
 }
-.lform .message a{
+.first-nav-div2 p{
+    color: white;
+    padding-top: 1rem;
+}
+.first-nav-div3{
+    margin-right: 2rem;
+    margin-left:3%;
+}
+.first-nav-div3 p{
+    color: white;
+    padding-top: 1rem;
+}
+#navbar{
+    padding:20px;
+    
+}
+.navbar-brand{
+    font-size: 210%;
+    margin-left: 4rem;
+}
+
+#book{
+    color:#c6bf97;
+}
+#vines{
+    /* color:#6e0606; */
+    color:#c6bf97;
+}
+
+#nav-link1{
+    padding-right: 0px;
+    color:#c6bf97;
+   
+}
+#nav-link2{
+    padding-right: 0px;
+   
+}
+#nav-link1{
+    padding-right: 0px;
+    
+}
+
+body{
+    background: url('./Images/login-bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+    padding: 5%;
+    margin: 3%;
+}
+
+.btn{
+    background-color:#c6bf97;
+}
+
+.btn a a:link a:visited a:hover a:active{
     text-decoration: none;
+    color: white
 }
-.lform .register-form {
-    display: none;
-}
-img {
-    float: right;
-    height: 680px;
-    width: 610px;
-    padding-top: 6%;
-    padding-right: 2%;
-    position: relative;
-}
-
