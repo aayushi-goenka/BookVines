@@ -67,7 +67,8 @@
     
 }
 .frequent-heading h3{
-    font-family: 'Yusei Magic', sans-serif;
+    /*font-family: 'Yusei Magic', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 170%; 
 }
@@ -85,7 +86,8 @@
     margin:auto;
 }
 .frequent-book-div2 p{
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-top: 1rem;
 }
