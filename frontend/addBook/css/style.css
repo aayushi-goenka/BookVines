@@ -1,0 +1,122 @@
+.first-nav{
+    background-color:#401303d9;
+    display:flex;
+    
+}
+.first-nav-div1{
+   margin-left: 5%;
+   padding-top: 1rem;
+   margin-right:3%;
+}
+.first-nav-div1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+.first-nav-div2{
+    margin:0 auto;
+    
+}
+.first-nav-div2 p{
+    color: white;
+    padding-top: 1rem;
+}
+.first-nav-div3{
+    margin-right: 2rem;
+    margin-left:3%;
+}
+.first-nav-div3 p{
+    color: white;
+    padding-top: 1rem;
+}
+#navbar{
+    padding:20px;
+    
+}
+.navbar-brand{
+    font-size: 210%;
+    margin-left: 4rem;
+}
+#book{
+    color:#c6bf97;
+}
+#vines{
+    color:#6e0606;
+}
+
+#nav-link1{
+    padding-right: 0px;
+   
+}
+#nav-link2{
+    padding-right: 0px;
+   
+}
+#nav-link1{
+    padding-right: 0px;
+    
+}
+
+
+.outer-div{
+    margin-top: 5rem;
+    border: #6e0606 solid 1.5px;
+    height: 29rem;
+    width: 20rem;
+}
+.inner-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.7rem;
+    background-color:#401303d9;
+    height: 25rem;
+    width: 15rem;
+}
+.for-upload{
+    position: relative;
+    top:10rem;
+    left:6.2rem;
+}
+
+
+#label img{
+   
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    
+}
+#label img:hover{
+    transform:scale(1.2);
+}
+
+
+
+.form-div{
+    margin-top: 5rem;
+}
+
+
+
+.copyright{
+    
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+    background-color: #401303d9;
+    padding: 0.8rem;
+}
+
+@media screen and (max-width: 770px){
+    .outer-div{
+        display:block;
+
+        width:17rem;
+        height:26rem;
+    }
+    .inner-div{
+        height:22rem;
+    }
+   
+}
+
