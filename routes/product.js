@@ -6,7 +6,7 @@ const app = express();
 router.get("/", function(req, res){
     if (req.isAuthenticated()) res.render("product");
     else res.redirect("/login");
-  });
+});
   
 
 

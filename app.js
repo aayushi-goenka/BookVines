@@ -24,11 +24,11 @@ const creviewRout = require('./routes/creviews')
 const reviewRout = require('./routes/reviews')
 const profileRout = require('./routes/profile')
 const checkoutRout = require('./routes/checkout')
-const addRout = require('./routes/add')
+const addRout = require('./routes/book')
 const productRout = require('./routes/product')
 const genreRout = require('./routes/genre')
-
-
+const bookRout=require('./routes/book')
+const bookSearch=require("./routes/")
 
 
 app.set("view engine", "ejs");
@@ -106,5 +106,11 @@ app.use('/product', productRout)
 
 //genre
 app.use('/genre', genreRout)
+
+//Book
+app.use('/book',bookRout)
+
+//Book Search
+app.use("/Search",)
 
 app.listen(process.env.PORT || 5000,()=>console.log("Up and Running.."))
