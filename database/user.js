@@ -15,6 +15,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: false
   }
+, year: {
+    type: Array,
+    required: false
+  }
 });
 
 userSchema.plugin(passportLocalMongoose);

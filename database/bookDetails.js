@@ -1,4 +1,5 @@
 const mongoose=require('mongoose')
+const Review = require('./review');
 
 const bookSchema=new mongoose.Schema({
     bookName:{
@@ -16,9 +17,25 @@ const bookSchema=new mongoose.Schema({
     imageURL:{
         type: URL
     },
-    contactDetails:{
+    genre:{
         type: String
-    }
+    },
+    userId:{
+        type: String
+    },
+    email:{
+        type: String
+    },
+    reviews:
+        [
+            {
+                reviewBy:{
+            type:String
+        }, 
+        reviewContent:
+        {type:String}
+    }]
+    
 })
   
 const bookDetail=mongoose.model("bookDetail",bookSchema)
