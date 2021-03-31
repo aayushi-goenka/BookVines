@@ -1,8 +1,8 @@
-const mongoose=require('mongoose')
+const mongoose=require('mongoose');
 const Review = require('./review');
 
 const bookSchema=new mongoose.Schema({
-    bookName:{
+    title:{
         type: String,
         required: true
     },
@@ -15,7 +15,7 @@ const bookSchema=new mongoose.Schema({
         required: true
     },
     imageURL:{
-        type: URL
+        type: String
     },
     genre:{
         type: String
@@ -37,6 +37,6 @@ const bookSchema=new mongoose.Schema({
     }]
     
 })
-  
+
 const bookDetail=mongoose.model("bookDetail",bookSchema)
 module.exports=bookDetail;
