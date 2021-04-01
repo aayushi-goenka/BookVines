@@ -1,4 +1,3 @@
-
 .first-nav{
     background-color:#401303d9;
     display:flex;
@@ -9,6 +8,7 @@
    padding-top: 1rem;
    margin-right:3%;
 }
+
 .first-nav-div1 a{
     text-decoration: none;
     color: white;
@@ -57,31 +57,47 @@
     padding-right: 0px;
     
 }
-.carousel-inner{
-    width: 60%;
-    height: auto;
-    margin:0 auto;
+
+
+.add{
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    
 }
+.add-div img{
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.add-div img:hover{
+   transform: scale(1.3);
+}
+
 .frequent-heading{
     margin-top: 4rem;
     
 }
 .frequent-heading h3{
-    /*font-family: 'Yusei Magic', sans-serif;*/
+    /*font-family: 'Kaushan Script', cursive;*/
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: 170%; 
+    font-size: 220%; 
 }
 
 .container{
     margin-top: 5rem;
 }
 .frequent-book{
+    margin-right: 1rem;
+    margin-bottom: 3rem;
     border: black solid 1px;
     border-radius: 4%;
     border-color: #bbbbbb;
 }
 .frequent-book-div1 img{
+    width: 150px;
+    height: 150px;
     display: block;
     margin:auto;
 }
@@ -92,54 +108,64 @@
     margin-top: 1rem;
 }
 
-.container2{
-    margin-top: 3rem;
-    background-color: #fff8ed;    
-}
-.about-detail {
-   margin-left: 3rem;
-   padding-top: 3rem;
-}
-.about-detail h3{
-   font-size: 160%;
-   color: #8f001b;
-}
-
-.frequent2-book{
-    margin-top: 2rem;
-}
-
-.copyright{
-    
-    margin-top: 3rem;
-    text-align: center;
-    color: white;
-    background-color: #401303d9;
-    padding: 0.8rem;
-}
-
 .frequent-book{
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
 .frequent-book:hover {
     transform: scale(1.2); 
-  }
-
-.frequent2-book{
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
 }
-.frequent2-book:hover {
-    transform: scale(1.2);
+
+.copyright{
+    
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    /* background-color: #401303d9; */
+    /* padding: 0.8rem; */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #401303d9;
+    color: white;
+    text-align: center;
+}
+
+.filter{
+    margin-left: 5rem;
+    color: #401303d9;
+}
+
+.filter a{
+    text-decoration: none;
+    color: #401303d9;
+}
+
+.filter a:hover{
+    font-size: large;
+    transition: 2ms;
+}
+
+.none {
+    padding-left: 32rem;
+}
+
+@media screen and (max-width: 582px){
+
+    .frequent-book{
+        margin-right:4rem;
+  }
+  .add{
+      margin-right:4rem ;
+  }
+  .none{
+    padding-left: 13rem;
   }
 
-  @media screen and (max-width: 580px){
-
-    .frequent2-book{
-        margin-right:3rem;
   }
-
-  }
-
-

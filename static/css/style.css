@@ -1,3 +1,4 @@
+
 .first-nav{
     background-color:#401303d9;
     display:flex;
@@ -56,40 +57,26 @@
     padding-right: 0px;
     
 }
-
-
-.add{
-    margin-right: 1rem;
-    margin-bottom: 3rem;
-    
+.carousel-inner{
+    width: 60%;
+    height: auto;
+    margin:0 auto;
 }
-.add-div img{
-    display: block;
-    margin: auto;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-}
-.add-div img:hover{
-   transform: scale(1.3);
-}
-
 .frequent-heading{
     margin-top: 4rem;
     
 }
 .frequent-heading h3{
-    /*font-family: 'Kaushan Script', cursive;*/
+    /*font-family: 'Yusei Magic', sans-serif;*/
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: 220%; 
+    font-size: 170%; 
 }
 
 .container{
     margin-top: 5rem;
 }
 .frequent-book{
-    margin-right: 1rem;
-    margin-bottom: 3rem;
     border: black solid 1px;
     border-radius: 4%;
     border-color: #bbbbbb;
@@ -105,12 +92,21 @@
     margin-top: 1rem;
 }
 
-.frequent-book{
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+.container2{
+    margin-top: 3rem;
+    background-color: #fff8ed;    
 }
-.frequent-book:hover {
-    transform: scale(1.2); 
+.about-detail {
+   margin-left: 3rem;
+   padding-top: 3rem;
+}
+.about-detail h3{
+   font-size: 160%;
+   color: #8f001b;
+}
+
+.frequent2-book{
+    margin-top: 2rem;
 }
 
 .copyright{
@@ -122,13 +118,35 @@
     padding: 0.8rem;
 }
 
-@media screen and (max-width: 582px){
+.frequent-book{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.frequent-book:hover {
+    transform: scale(1.2); 
+  }
 
-    .frequent-book{
-        margin-right:4rem;
+.frequent2-book{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.frequent2-book:hover {
+    transform: scale(1.2);
   }
-  .add{
-      margin-right:4rem ;
+
+  .none {
+    padding-left: 32rem;
+}
+
+  @media screen and (max-width: 582px){
+
+    .frequent2-book{
+        margin-right:3rem;
+  }
+  .none{
+    padding-left: 13rem;
   }
 
   }
+
+

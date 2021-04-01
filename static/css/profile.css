@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+.first-nav{
+    background-color:#401303d9;
+    display:flex;
+    
+}
+.first-nav-div1{
+   margin-left: 5%;
+   padding-top: 1rem;
+   margin-right:3%;
+}
+.first-nav-div1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+.first-nav-div2{
+    margin:0 auto;
+    
+}
+.first-nav-div2 p{
+    color: white;
+    padding-top: 1rem;
+}
+.first-nav-div3{
+    margin-right: 2rem;
+    margin-left:3%;
+}
+.first-nav-div3 p{
+    color: white;
+    padding-top: 1rem;
+}
+#navbar{
+    padding:20px;
+    
+}
+.navbar-brand{
+    font-size: 210%;
+    margin-left: 4rem;
+}
+#book{
+    color:#c6bf97;
+}
+#vines{
+    color:#6e0606;
+}
+
+#nav-link1{
+    padding-right: 0px;
+   
+}
+#nav-link2{
+    padding-right: 0px;
+   
+}
+#nav-link1{
+    padding-right: 0px;
+    
+}
+
+
+.outer-div{
+    /* margin-top: 9rem; */
+    margin-top: 4rem;
+    border: black solid 2.5px;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20rem;
+}
+
+.for-upload{
+    position: relative;
+    top:1.2rem;
+    left:2.2rem;
+}
+
+
+#label img{
+   
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    
+}
+#label img:hover{
+    transform:scale(1.05);
+}
+
+#user-detail{
+    margin-bottom: 2rem;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.4rem;
+}
+
+.btn{
+    display: block;
+    margin:0 0 0 auto;
+    
+}
+
+.form-div{
+    margin-top: 5rem;
+}
+
+
+
+/* .copyright{
+    
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+    background-color: #401303d9;
+    padding: 0.8rem;
+} */
+
+.copyright{
+    
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    /* background-color: #401303d9; */
+    /* padding: 0.8rem; */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #401303d9;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 770px){
+    .outer-div{
+        display:block;
+        width:20rem;
+        height:19rem;
+    }
+    .user{
+        margin-right: 3rem;
+    }
+    
+   
+}
+
+@media (min-width: 576px){
+.col-sm-5 {
+    max-width: 38%;
+}
+}
+
+@media screen and (max-width: 542px){
+    /* .btn{
+        margin-bottom: 5rem;
+    } */
+    footer{
+        position: relative;
+    }
+}

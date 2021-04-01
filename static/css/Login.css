@@ -60,7 +60,7 @@
 }
 
 body{
-    background: url('./Images/login-bg2.png');
+    background: url('../login-bg2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +72,7 @@ form{
     width: 30%;
     padding: 5%;
     margin: 3%;
+    margin-top: 10%;
 }
 
 .btn{
