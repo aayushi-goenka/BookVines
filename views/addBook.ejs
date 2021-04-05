@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Vines</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/addBook.css">
+
+
+
+    <style>
+      .file-upload {
+        background-color: #ffffff;
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      .file-upload-btn {
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        border-bottom: 2px solid grey;
+        transition: all .2s ease;
+        outline: none;
+        text-transform: uppercase;
+        /* font-weight: 700; */
+      }
+
+      .file-upload-btn:hover {
+        /* background: #1AA059; */
+        /* background: black; */
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+      }
+
+      .file-upload-btn:active {
+        border: 0;
+        transition: all .2s ease;
+      }
+
+      .file-upload-content {
+        display: none;
+        text-align: center;
+      }
+
+      .file-upload-input {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .image-upload-wrap {
+        margin-top: 20px;
+        /* border: 4px dashed #1FB264; */
+        border: 2px dashed grey;
+        position: relative;
+      }
+
+      .image-dropping,
+      .image-upload-wrap:hover {
+        /* background-color: #1FB264; */
+        background-color: grey;
+        border: 2px dashed #ffffff;
+      }
+
+      .image-title-wrap {
+        padding: 0 15px 15px 15px;
+        /* color: #222; */
+        color: #6e0606;
+      }
+
+      .drag-text {
+        text-align: center;
+      }
+
+      .drag-text h3 {
+        font-weight: 100;
+        text-transform: uppercase;
+        /* color: #15824B; */
+        /* color: black; */
+        color: #6e0606;
+        padding: 60px 0;
+      }
+
+      .file-upload-image {
+        max-height: 200px;
+        max-width: 200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .remove-image {
+        width: 200px;
+        margin: 0;
+        /* color: #fff; */
+        color: #ffffff;
+        /* background: #cd4535; */
+        /* background: black; */
+        background: grey;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        /* border-bottom: 4px solid #b02818; */
+        border-bottom: 2px solid grey;
+        transition: all .2s ease;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .remove-image:hover {
+        /* background: #c13b2a; */
+        /* background: black; */
+        /* color: #ffffff; */
+        color: #6e0606;
+        transition: all .2s ease;
+        cursor: pointer;
+      }
+
+      .remove-image:active {
+        border: 0;
+        transition: all .2s ease;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="first-nav">
+        <div class="first-nav-div1">
+        <a href="/" class="link1">BookVines</a>
+        </div>
+        <div class="first-nav-div2">
+            <p class="div2-para">Free Exchange Over Hundred Of Books With Love...</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+        <a class="navbar-brand" href="/"><span id="book">Book</span><span id="vines">Vines</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="nav-link1" href="/">Home |</a>
+            <a class="nav-item nav-link" id="nav-link2 active" href="/booklist">Browse |</a>
+            <a class="nav-item nav-link" id="nav-link3" href="#">FAQ |</a>
+            <a class="nav-item nav-link" id="nav-link3" href="/profile">Profile |</a>
+          </div>
+         </div>
+         <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        
+      </nav>
+      <div class="container">
+        <form action="/book/addBook" method="POST">
+          <!-- <div class="row justify-content-sm-between"> -->
+              <!-- <div class="col col-sm-6 form-div"> -->
+                  <div class="form-group">
+                      <label for="title" style="color:#6d1c00;font-size: 120%;">TITLE</label>
+                      <input type="text" name="title" class="form-control" id="title" placeholder="Tile Of Book" width="10">
+                      
+                  </div>
+                  <div class="form-group">
+                      <label for="author" style="color:#6d1c00;font-size: 120%;">AUTHOR</label>
+                      <input type="text" name="author" class="form-control" id="author" placeholder="Author Of Book">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1" style="color:#6d1c00;font-size: 120%;">DESCRIPTION</label>
+                      <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                    <!-- New Div Added for Book pic upload. Add It's styling as well-->
+                  <!-- <div class="form-group"> -->
+                      <!-- <progress value="0" id="uploader" max="100">0%</progress><br><br>  -->
+                      <!-- <input id="photo" class="file btn btn-outline-dark" type="file" name="mainimage" onchange="getfile()" value="" ><br /><br /> -->
+                      <!-- Its display will remain none -->
+                      <!-- <input type="url" id="link" name="imageURL" style="display: none;"> -->
+                  <!-- </div>  -->
+                  <div class="form-group">
+                  <div class="file-upload">
+                    <!-- <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button> -->
+                  
+                    <div class="image-upload-wrap">
+                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                      <div class="drag-text">
+                        <h3>Drag and drop a file or select add Image</h3>
+                      </div>
+                    </div>
+                    <div class="file-upload-content">
+                      <img class="file-upload-image" src="#" alt="your image" />
+                      <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                    <!-- Genre of the book -->
+                  <div class="form-group">
+                      <label for="author" style="color:#6d1c00;font-size: 120%;">Genre</label>
+                      <input type="text" name="genre" class="form-control" id="genre" placeholder="Genre of Book">
+                  </div>
+
+                    <!--Email of seller-->
+                  <div class="form-group">
+                      <label for="email" style="color:#6d1c00;font-size: 120%;">Email</label>
+                      <input type="email" name="email" class="form-control" id="email" placeholder="Email ID">
+                  </div>
+
+                  <button type="submit" class="btn btn-outline-dark">Exchange</button>
+              <!-- </div> -->
+          <!-- </div> -->
+        </form>
+      </div>
+
+      <footer>
+        <div class="copyright">
+          <p> <img src="../static/copyright.png" alt=""> 2020. All Rights Reserved BookVines</p>
+        </div>
+      </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="../static/external/index.js"></script>
+      <script src="../static/external/addBook.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+      <script>
+        function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+    $('.image-upload-wrap').addClass('image-dropping');
+  });
+  $('.image-upload-wrap').bind('dragleave', function () {
+    $('.image-upload-wrap').removeClass('image-dropping');
+});
+      </script>
+</body>
+</html>
