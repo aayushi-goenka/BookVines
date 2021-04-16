@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookVines</title>
+  <link rel="stylesheet" href="../static/css/Product.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"><div class="pd-wrap">
+		<!--NAVBAR-->
+		<div class="first-nav">
+			<div class="first-nav-div1">
+			<a href="/" class="link1">BookVines</a>
+			</div>
+			<div class="first-nav-div2">
+				<p class="div2-para">Free Exchange Over Hundred Of Books With Love...</p>
+			</div>
+		</div>
+	
+		<nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+			<a class="navbar-brand" href="/"><span id="book">Book</span><span id="vines">Vines</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav">
+				<a class="nav-item nav-link" id="nav-link1" href="/">Home |</a>
+				<a class="nav-item nav-link active" id="nav-link2" href="/book">Browse |</a>
+				<a class="nav-item nav-link" id="nav-link3" href="/">FAQ |</a>
+				<a class="nav-item nav-link" id="nav-link3" href="/profile">Profile |</a>
+			  </div>
+			 </div>
+			 <!-- <form class="form-inline">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+			</form>
+			 -->
+		  </nav>
+		<!---->
+		<div class="container">
+	        <!-- <div class="heading-section">
+	            <h2>BOOK</h2>
+	        </div> -->
+	        <div class="row">
+	        	<div class="col-md-6">
+	        		<div id="slider" class="owl-carousel product-slider">
+						<div class="item">
+						  	<img src= "<%=data.imageURL%>"  />
+						</div>
+					</div>
+	        	</div>
+	        	<div class="col-md-6">
+	        		<div class="product-dtl">
+        				<div class="product-info">
+		        			<div class="product-name"><%=data.title%></div>
+		        		</div>
+	        			<br /><p><b>Author Name:</b> <%=data.author%></p>
+
+						<!--Seller email id added-->
+						<p><b>Contact Email:</b> <%=data.email%></p>
+						<p><b>Genre:</b>  <%=data.genre%></p>
+						<p><b>Description:</b>  <%=data.description%></p>
+
+	        			<!-- <div class="product-count">
+							<a href="#" class="round-black-btn">Contact Seller</a>
+	        			</div> -->
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="product-info-tabs">
+		        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				  	<!-- <li class="nav-item">
+				    	<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+				  	</li> -->
+				  	<li class="nav-item">
+				    	<a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
+				  	</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  	<!-- <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+				  		<%=data.description%>
+				  	</div> -->
+				  	<div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+				  		<div class="review-heading">REVIEWS</div><br /><br />
+				  		
+						<%if(data.reviews.length>0){%>
+							<%for(var i=0;i<data.reviews.length;i++){%>
+								<p>
+									<b>Name: </b><%=data.reviews[i].reviewBy%><br />
+									<b>Review: </b><%=data.reviews[i].reviewContent%><br /><br />
+								</p>
+
+								<%}%>
+									<%}else{%>
+										<p class="mb-20">There are no reviews yet.</p>
+										<%}%>
+
+				  		<form class="review-form" method="POST" action="/product/<%=data._id%>/#review">
+		        			<div class="form-group">
+			        			<label>Your message</label>
+			        			<textarea name ="reviewContent" class="form-control" rows="10"></textarea>
+			        		</div>
+			        		<div class="row">
+				        		<div class="col-md-6">
+				        			<div class="form-group">
+					        			<input type="text" name="reviewBy" class="form-control" placeholder="Name*">
+					        		</div>
+					        	</div>
+					        </div>
+							<button type="submit" class="round-black-btn">Submit Review</button>
+			        	</form>
+				  	</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<footer>
+
+        <div class="copyright">
+          <p> <img src="../static/copyright.png" alt=""> 2020. All Rights Reserved BookVines</p>
+        </div>
+
+    </footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- partial -->
+  <script  src="../static/external/product.js"></script>
+
+</body>
+</html>
