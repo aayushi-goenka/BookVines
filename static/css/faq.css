@@ -1,0 +1,95 @@
+.first-nav{
+    background-color:#401303d9;
+    display:flex;
+    
+}
+.first-nav-div1{
+   margin-left: 5%;
+   padding-top: 1rem;
+   margin-right:3%;
+}
+.first-nav-div1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+.first-nav-div2{
+    margin:0 auto;
+    
+}
+.first-nav-div2 p{
+    color: white;
+    padding-top: 1rem;
+}
+.first-nav-div3{
+    margin-right: 2rem;
+    margin-left:3%;
+}
+.first-nav-div3 p{
+    color: white;
+    padding-top: 1rem;
+}
+#navbar{
+    padding:20px;
+    
+}
+.navbar-brand{
+    font-size: 210%;
+    margin-left: 4rem;
+}
+#book{
+    color:#c6bf97;
+}
+#vines{
+    color:#6e0606;
+}
+
+#nav-link1{
+    padding-right: 0px;
+   
+}
+#nav-link2{
+    padding-right: 0px;
+   
+}
+#nav-link1{
+    padding-right: 0px;
+    
+}
+.accordion {
+    background-color: #c6bf97;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    margin-left: 60px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .accordion:active, .accordion:hover {
+    background-color: #401303d9;
+    color: white;
+    transition: 0.6 ease;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    margin-left: 60px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    padding: 0.8rem;
+  }
+.copyright{
+    
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+    background-color: #401303d9;
+    padding: 0.8rem; 
+}

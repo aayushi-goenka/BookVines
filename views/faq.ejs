@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Vines</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../static/css/faq.css">
+    
+    </head>
+    <body>
+        <div class="first-nav">
+            <div class="first-nav-div1">
+            <a href="/" class="link1">BookVines</a>
+            </div>
+            <div class="first-nav-div2">
+                <p class="div2-para">Free Exchange Over Hundred Of Books With Love...</p>
+            </div>
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+            <a class="navbar-brand" href="/"><span id="book">Book</span><span id="vines">Vines</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="nav-link1" href="/">Home |</a>
+                <a class="nav-item nav-link" id="nav-link2" href="/book">Browse |</a>
+                <a class="nav-item nav-link active" id="nav-link3" href="#">FAQ |</a>
+                <a class="nav-item nav-link" id="nav-link3" href="/profile">Profile |</a>
+              </div>
+             </div>
+        </nav>
+
+        <button class="accordion">About the website</button>
+        <div class="panel">
+            <p>This is a unique project that aims to bring like-minded readers together and help them share, 
+                borrow or exchange books without the hassle of incessant buying. It is a portal where you can 
+                upload the books you would like to exchange and find the books you would like to borrow without 
+                any costs.
+            </p>
+        </div>
+
+        <button class="accordion">Getting started on the website</button>
+        <div class="panel">
+            <p>To get started you just have to follow a few simple steps. 
+                Open the signup page of our website and fill in the details asked.
+                Once you have signed in you will be able to access all the books available on the website.
+                Go and find the book that interests you the most!
+            </p>
+        </div>
+
+        <button class="accordion">Will my information be shared?</button>
+        <div class="panel">
+            <p>Your information is completely safe with us. 
+                Only your email ID will be shared with others on our website who have signed up just like you.
+                No, we will not be sharing your information to a third-party organization.
+            </p>
+        </div>
+        
+        <button class="accordion">Where can I ask my queries?</button>
+        <div class="panel">
+            <p>You can contact us at gfg.srmist@gmail.com</p>
+        </div>
+
+        <button class="accordion">Reviewing and uploading books</button>
+        <div class="panel">
+            <p>You can search the books by genre and can also upload the books you would like to share with others.
+                You can write reviews for the books you have read and go through other’s reviews to choose your next book.                
+            </p>
+        </div>
+
+        <button class="accordion">How will the exchange take place?</button>
+        <div class="panel">
+            <p>The exchange is completely between you and the person whose book you've chosen to borrow. 
+                We provide a platform for like-minded readers to get in touch. Further communication can take 
+                place between the two people as per their comfort via the contact information provided.                
+            </p>
+        </div>
+
+        <button class="accordion">When will I have to return the book?</button>
+        <div class="panel">
+            <p>The return will be completely based on the understanding between you and the person whose book you 
+                have borrowed and the stipulated time you both have agreed upon.             
+            </p>
+        </div>
+
+        <button class="accordion">Do I have to pay a registration or exchange fee?</button>
+        <div class="panel">
+            <p>This is a complete free portal. There is absolutely no registration charge whatsoever. It is simply a
+                 platform to facilitate the exchange and borrowing of books as opposed to incessant buying.             
+            </p>
+        </div>
+        
+        <footer>
+            <div class="copyright">
+              <p> <img src="../static/copyright.png" alt=""> 2020. All Rights Reserved BookVines</p>
+            </div>
+        </footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+    </body>
+</html>
