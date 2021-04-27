@@ -30,6 +30,7 @@ const bookRout=require('./routes/book')
 const bookSearch=require("./routes/bookSearch")
 const failRout = require('./routes/fail')
 const landingRout=require('./routes/landing')
+const faqRout = require('./routes/faq')
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static("public"));
@@ -89,5 +90,8 @@ app.use('/book',bookRout)
 
 //Book Search
  app.use("/Search",bookSearch)
+
+ //FAQ Page
+ app.use("/faq",faqRout)
 
 app.listen(process.env.PORT || 3000,()=>console.log("Up and Running.."))
