@@ -25,6 +25,7 @@
   },
   "author": "Aayushi/Annanya",
   "license": "ISC",
+  "engines": {"node":"12.16.3"},
   "bugs": {
     "url": "https://github.com/aayushi-goenka/BookVines/issues"
   },
