@@ -8,10 +8,10 @@ const app = express();
 
 
 router.get("/", function(req, res){
-    // if (!req.isAuthenticated())
+    if (!req.isAuthenticated())
      res.render("login");
-    //  else
-    //  res.redirect("/");
+     else
+     res.redirect("/profile");
   });
   
   router.post("/", function (req, res) {
@@ -21,7 +21,7 @@ router.get("/", function(req, res){
     });
     req.login(user, function (err) {
       if (err) {
-        console.log(err);
+        res.redirect("/fail");
       } else {
         passport.authenticate("local")(req, res, function () {
           res.redirect("/");
@@ -29,7 +29,4 @@ router.get("/", function(req, res){
       }
     });
   });
-
-
-
 module.exports = router;

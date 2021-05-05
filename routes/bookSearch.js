@@ -5,20 +5,16 @@ const bookDetail=require("../database/bookDetails")
 const passportLocalMongoose = require("passport-local-mongoose"); 
 
 
-router.post("/",(req,res)=>{
- 
+router.post("/",async (req,res)=>{
     bookDetail.find({},(err,data)=>{
         if(err)
         {
             console.log(err)
-        }else if(data.length>0)
+        }else
         {
-             const filteredOption=req.body.filter;
-             const value=req.body.searchedValue;
-            const UpdatedList=data.filter((a)=> a.filteredOption===value)
-            res.render('book',{bookData: UpdatedList})
-        }else{
-             res.redirect("/book")
+            const value=req.body.genre;
+            const UpdatedList=data.filter((a)=> a.genre===value)
+            res.render('BookList',{posts: UpdatedList,filter: true,filterValue: req.body.genre})
         }
     })
 

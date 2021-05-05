@@ -11,27 +11,43 @@ router.get("/",(req,res)=>{
        if(err)
        {
          console.log(err)
+         res.redirect("/fail");
        }else{
-         res.render('book',{bookData: data})
+          res.render('BookList',{posts: data,filter: false})
        }
      })
   }else res.redirect("/login")
 })
 
+router.get("/addBook",(req,res)=>{
+    if(req.isAuthenticated())
+    {
+    
+       res.render('addBook')
+    }else{
+      res.redirect("/login")
+    }
+})
+
+
 router.post("/addBook", function(req, res){
     if (req.isAuthenticated()){
+       
        const Details=new bookDetail({
-           bookName: req.body.bookName,
+           title: req.body.title,
            author: req.body.author,
            description: req.body.description,
            imageURL: req.body.imageURL,
-           contactDetails: req.body.contactDetails
+           genre: req.body.genre,
+           userId: req.user._id,
+           email: req.body.email
        })
        Details.save((err,result)=>{
          if(err){
            console.log(err)
+           res.redirect("/fail");
          }else{
-           res.render("add");
+           res.redirect("/product/"+result._id);
          }
        })
     }

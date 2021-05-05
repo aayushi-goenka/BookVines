@@ -4,39 +4,21 @@ const passport =require("passport");
 const passportLocalMongoose = require("passport-local-mongoose"); 
 const User= require("../database/user");
 const app = express();
+app.set('views', __dirname + '/views');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
 
-
-// router.get("/",function(req,res){
-//     if (!req.isAuthenticated())
-//       res.render("signup");
-//     else
-//     res.redirect("/");
-//   });
-  
-//   router.post("/", function (req, res) {
-  
-//     User.register({ username: req.body.username }, req.body.password, function (err, user) {
-//       if (err) {
-//         console.log(err);
-//         res.redirect("/signup");
-//       } else {
-//         passport.authenticate("local")(req, res, function () {
-//           res.redirect("/genre");
-//         });
-//       }
-//     });
-  
-//   });
 
 router.get("/", function(req,res){
   res.render("signup");
 });
 router.post("/", function(req,res){
-
-  User.register({ username: req.body.username }, req.body.password, function (err,user) {
+  Users = new User({fname:req.body.fname,lname:req.body.lname,year:req.body.year,username:req.body.username});
+  console.log(Users);
+  User.register(Users, req.body.password, function (err,user) {
     if (err) {
       console.log(err);
-      res.redirect("/signup");
+      res.redirect("/signup/");
     } else {
       passport.authenticate("local")(req, res, function () {
         res.redirect("/");
@@ -45,10 +27,4 @@ router.post("/", function(req,res){
   });
 });
 
-
-
-
-
-
-
-  module.exports = router;
+module.exports = router;

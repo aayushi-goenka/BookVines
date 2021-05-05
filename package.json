@@ -5,16 +5,18 @@
   "main": "app.js",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "lodash": "^4.17.21",
-    "mongoose": "^5.12.4",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.14",
+    "nodemon": "^2.0.7",
     "passport": "^0.4.1",
     "passport-local-mongoose": "^6.1.0"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
